@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import WhodRather from "./components/Whodrather";
+import { ChakraProvider, Flex } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+ <Flex minH="100vh" justifyContent ="center"
+        justifyContents="center"
+        alignItems="center"
+        fontSize="3xl"
+      >
+        Which animal would you rather?{" "}
+      </Flex>
+      <WhodRather />
+    </ChakraProvider>
   );
 }
 
