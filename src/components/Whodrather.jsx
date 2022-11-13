@@ -53,7 +53,7 @@ const WhodRather = () => {
       flexDir="column"
     >
       <Text fontSize="4xl" mb={8}>
-        🎉🎉🎉Conglaturations🎉🎉🎉
+        🎉🎉🎉Congratulations🎉🎉🎉
       </Text>
       <AnimalCards type={round[choice]} />
     </Flex>
